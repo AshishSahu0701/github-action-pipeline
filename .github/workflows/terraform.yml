@@ -39,7 +39,7 @@ jobs:
     - name: Set Azure Subscription
       run: |
           az account set \
-            --subscription "bc9d2c5e-f99f-4142-8f22-8f6dae37180d"
+            --subscription "25e65bfa-14dd-466e-9f76-e0654ecde46a"
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
