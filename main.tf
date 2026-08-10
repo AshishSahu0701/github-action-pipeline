@@ -1,19 +1,19 @@
 terraform {
   required_providers {
     azurerm = {
-        source = "hashicorp/azurerm"
-        version = "4.50.0"
+      source  = "hashicorp/azurerm"
+      version = "4.50.0"
     }
   }
 }
 
 provider "azurerm" {
   features {
-    
+
   }
 }
 
 resource "azurerm_resource_group" "RG" {
-  name = "rg-pipeline"
+  name     = "rg-pipeline"
   location = "central india"
 }
