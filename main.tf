@@ -12,3 +12,8 @@ provider "azurerm" {
     
   }
 }
+
+resource "azurerm_resource_group" "RG" {
+  name = "rg-pipeline"
+  location = "central india"
+}
