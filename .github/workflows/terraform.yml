@@ -36,6 +36,10 @@ jobs:
             --username "1ac2bfce-ba54-42e1-9b19-5994f46eef77" \
             --password "D6-8Q~_l2ngBioJEyzKsKUkR7uaQHzftBTncTapE" \
             --tenant "bebf0fb6-edf2-4b8d-83c1-85a7083830e4"
+    - name: Set Azure Subscription
+      run: |
+          az account set \
+            --subscription "bc9d2c5e-f99f-4142-8f22-8f6dae37180d"
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
