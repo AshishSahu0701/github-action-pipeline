@@ -18,3 +18,8 @@ resource "azurerm_resource_group" "RG" {
   name     = "rg-pipeline"
   location = "central india"
 }
+
+resource "azurerm_resource_group" "RG1" {
+  name     = "rg-pipeline-dev"
+  location = "central india"
+}
