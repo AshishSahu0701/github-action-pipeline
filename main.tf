@@ -22,5 +22,5 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "RG" {
   name     = "rg-githubaction"
-  location = "central india"
+  location = "East US"
 }
