@@ -1,0 +1,24 @@
+name: Terraform Plan and Apply
+
+on:
+  push:
+    branches:
+      - feature/*
+      - main
+
+jobs:
+  Terraform_Plan:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Terraform_init
+        run: terraform init
+
+      - name: Terraform_validate
+        run: terraform validate
+
+      - name: Terraform_FMT_Check
+        run: terraform fmt -check -recursive
+
+      - name: Terraform_Plan
+        run: terraform Plan
