@@ -39,7 +39,10 @@ jobs:
 
       - name: Terraform_validate
         run: terraform validate
-
+        
+      - name: Terraform_FMT_Check
+        run: terraform fmt -recursive
+        
       - name: Terraform_FMT_Check
         run: terraform fmt -check -recursive
 
