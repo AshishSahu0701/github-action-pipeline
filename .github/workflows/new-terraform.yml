@@ -47,4 +47,4 @@ jobs:
         run: terraform fmt -check -recursive
 
       - name: Terraform_Plan
-        run: cd Environment/dev;terraform Plan
+        run: cd Environment/dev;terraform plan
