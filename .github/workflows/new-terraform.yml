@@ -6,13 +6,23 @@ on:
       - feature/*
       - main
 
+  pull_request:
+    branches:
+      - main
+
 jobs:
   Terraform_Plan:
+    name: Terraform Plan Job
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.1.0 
+        uses: actions/checkout@v6.1.0
+
+      - name: AzureLogin
+        run: az login --service-principal --username "27a61f34-1ca2-4446-91ba-660d2381f25a" --password "wTs8Q~2MGUxywUmvDSrQOlSHCbC5tQwG-NqHbdn." --tenant "bebf0fb6-edf2-4b8d-83c1-85a7083830e4"
+
+
       
       - name: HashiCorp - Setup Terraform
         uses: hashicorp/setup-terraform@v2.0.3
