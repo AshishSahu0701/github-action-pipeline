@@ -1,0 +1,7 @@
+variable "RGS" {
+  
+}
+
+variable "VNETS" {
+  
+}
